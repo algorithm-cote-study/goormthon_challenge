@@ -43,6 +43,8 @@ ex) 월요일 문제 공개시 수요일까지 풀이완료
     ├── day2
     │   └── seunggu
 ```
+<img width="203" alt="image" src="https://github.com/algorithm-cote-study/goormthon_challenge/assets/98408267/a4738798-5fcd-40e0-8357-616435413118">
+
 
 ## <img src="https://img.icons8.com/color/48/null/java-files.png" width="30" height="30" style="padding: 0;margin-bottom:-5px;"/> 파일 생성 기준
 
