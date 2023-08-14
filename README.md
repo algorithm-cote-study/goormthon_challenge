@@ -1,34 +1,40 @@
-# [goormthon_challenge](https://9oormthonchallenge.oopy.io/?utm_source=community&utm_medium=social_affiliate&utm_content=pre_apply)
+# [☁️ goormthon_challenge](https://9oormthonchallenge.oopy.io/?utm_source=community&utm_medium=social_affiliate&utm_content=pre_apply)
 
 ## 개요
-
 
 ## 🕙 챌린지 참여 방법
 
 1. STEP 1 </br>
-월,화,수,목,금 평일 오전 10시 [도전하기] 버튼 클릭 후 챌린지 시작
+   월,화,수,목,금 평일 오전 10시 [도전하기] 버튼 클릭 후 챌린지 시작
 
 2. STEP 2 </br>
-하루에 한문제 씩 풀기 (문제 공개 후 48시간 이내 풀어야 함)
+   하루에 한문제 씩 풀기 (문제 공개 후 48시간 이내 풀어야 함)
 
 3. STEP 3 </br>
-문제가 공개된지 48시간이 지나기 전에 100점 받을 경우 1점 획득 </br>
-ex) 월요일 문제 공개시 수요일까지 풀이완료
-
+   문제가 공개된지 48시간이 지나기 전에 100점 받을 경우 1점 획득 </br>
+   ex) 월요일 문제 공개시 수요일까지 풀이완료
 
 ## 📝 풀이 유형
 
 1. Week1 </br>
-8월 14일 ~ 8월 20 (구현)
+   8월 14일 ~ 8월 20 (구현)
 
 2. Week2 </br>
-8월 21일 ~ 8월 27일 (완전탐색)
+   8월 21일 ~ 8월 27일 (완전탐색)
 
 3. Week3 </br>
-8월 28일 ~ 9월 3일 (탐색, 동적 프로그래밍)
+   8월 28일 ~ 9월 3일 (탐색, 동적 프로그래밍)
 
 4. Week4 </br>
-9월 4일 ~ 9월 10일 (그래프 탐색)
+   9월 4일 ~ 9월 10일 (그래프 탐색)
+
+## 문제 공개
+
+| 주차(날짜)           | 유형    | 제목         | 링크                                                                                                                                         |
+|------------------|-------|------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Week1(Day1-8/14) | 시뮬레이션 | 운동 중독 플레이어 | [운동 중독 플레이어(195683)](https://level.goorm.io/exam/195683/%EC%9A%B4%EB%8F%99-%EC%A4%91%EB%8F%85-%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4/quiz/1) |
+| Week1(Day2-8/15) | 시뮬레이션 |            |                                                                                                                                            |
+| Week1(Day3-8/16) | 시뮬레이션 |            |                                                                                                                                            |
 
 ## <img src="https://img.icons8.com/color/48/null/folder-tree.png" width="30" height="30" style="padding: 0;margin-bottom:-5px;"/> 패키지 생성 기준
 
@@ -43,8 +49,8 @@ ex) 월요일 문제 공개시 수요일까지 풀이완료
     ├── day2
     │   └── seunggu
 ```
-<img width="203" alt="image" src="https://github.com/algorithm-cote-study/goormthon_challenge/assets/98408267/a4738798-5fcd-40e0-8357-616435413118">
 
+<img width="203" alt="image" src="https://github.com/algorithm-cote-study/goormthon_challenge/assets/98408267/a4738798-5fcd-40e0-8357-616435413118">
 
 ## <img src="https://img.icons8.com/color/48/null/java-files.png" width="30" height="30" style="padding: 0;margin-bottom:-5px;"/> 파일 생성 기준
 
