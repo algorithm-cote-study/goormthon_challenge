@@ -10,6 +10,8 @@ import java.util.Arrays;
 * Solving time : 17:42 ~ 17:49
 */
 public class Solution {
+    private static final int HOUR = 24;
+    private static final int MINUTE = 60;
 
     public static void main(String[] args) {
         try {
@@ -27,9 +29,9 @@ public class Solution {
         for (int i = 0; i < N; i++) {
             developTime += Integer.parseInt(br.readLine());
         }
-        int totalMinute = (time[1] + (developTime % 60)) % 60;
-        int plusHour = (time[1] + (developTime % 60)) / 60;
-        int totalHour = (time[0] + (developTime / 60) + plusHour) % 24;
+        int totalMinute = (time[1] + (developTime % MINUTE)) % MINUTE;
+        int plusHour = (time[1] + (developTime % MINUTE)) / MINUTE;
+        int totalHour = (time[0] + (developTime / MINUTE) + plusHour) % HOUR;
         return totalHour + " " + totalMinute;
     }
 }
