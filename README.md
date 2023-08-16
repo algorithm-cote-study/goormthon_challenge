@@ -38,7 +38,7 @@ ex) 월요일 문제 공개시 수요일까지 풀이완료
 |------------------|-------|------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | Week1(Day1-8/14) | 시뮬레이션 | 운동 중독 플레이어 | [운동 중독 플레이어(195683)](https://level.goorm.io/exam/195683/%EC%9A%B4%EB%8F%99-%EC%A4%91%EB%8F%85-%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4/quiz/1) |
 | Week1(Day2-8/15) | 시뮬레이션 | 프로젝트 매니징 | [프로젝트 매니징(195684)](https://level.goorm.io/exam/195684/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%A4%EB%8B%88%EC%A7%95/quiz/1)                                                                                                                                   |
-| Week1(Day3-8/16) | 시뮬레이션 |            |                                                                                                                                            |
+| Week1(Day3-8/16) | 시뮬레이션 |   합 계산기         | [합 계산기(195685)](https://level.goorm.io/exam/195685/%ED%95%A9-%EA%B3%84%EC%82%B0%EA%B8%B0/quiz/1)                                                                                                                                            |
 
 ## <img src="https://img.icons8.com/color/48/null/folder-tree.png" width="30" height="30" style="padding: 0;margin-bottom:-5px;"/> 패키지 생성 기준
 
