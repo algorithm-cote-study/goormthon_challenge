@@ -10,21 +10,21 @@ import java.io.IOException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("프로젝트 매니징")
+@DisplayName("프로젝트 매니징 - 승구")
 class SolutionTest {
 
     @Test
     @DisplayName("프로젝트 매니징 테스트 케이스1")
     void test_case_1() throws IOException {
-        BufferedReader reader = TestFileUtil.getReader(this.getClass(), "week1/day2/test_case1.txt");
+        BufferedReader reader = TestFileUtil.getReader(this.getClass(), "testcase/week1/day2/test_case1.txt");
         String solution = solution(reader);
-        assertEquals(getString(TestFileUtil.getReader(this.getClass(), "week1/day2/answer1.txt")), solution);
+        assertEquals(getString(TestFileUtil.getReader(this.getClass(), "testcase/week1/day2/answer1.txt")), solution);
     }
     @Test
     @DisplayName("프로젝트 매니징 테스트 케이스2")
     void test_case_2() throws IOException {
-        BufferedReader reader = TestFileUtil.getReader(this.getClass(), "week1/day2/test_case2.txt");
+        BufferedReader reader = TestFileUtil.getReader(this.getClass(), "testcase/week1/day2/test_case2.txt");
         String solution = solution(reader);
-        assertEquals(getString(TestFileUtil.getReader(this.getClass(), "week1/day2/answer2.txt")), solution);
+        assertEquals(getString(TestFileUtil.getReader(this.getClass(), "testcase/week1/day2/answer2.txt")), solution);
     }
 }
