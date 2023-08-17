@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Solution {
 
     public static void main(String[] args) throws Exception {
-        // 16 분 소요
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
 
             System.out.println(solution(reader));
