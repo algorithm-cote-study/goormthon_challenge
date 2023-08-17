@@ -25,25 +25,17 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             String[] target = br.readLine().split(" ");
             answer += calculate(Integer.parseInt(target[0]), target[1], Integer.parseInt(target[2]));
-
         }
 
         return answer;
     }
 
     static int calculate(int num1, String operation, int num2) {
-        if ("+".equals(operation)) {
-            return num1 + num2;
-        }
-
-        if ("-".equals(operation)) {
-            return num1 - num2;
-        }
-
-        if ("*".equals(operation)) {
-            return num1 * num2;
-        }
-
-        return num1 / num2;
+        return switch (operation) {
+            case "+" -> num1 + num2;
+            case "-" -> num1 - num2;
+            case "*" -> num1 * num2;
+            default -> num1 / num2;
+        };
     }
 }
