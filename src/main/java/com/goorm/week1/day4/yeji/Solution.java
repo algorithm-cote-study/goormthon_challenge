@@ -41,28 +41,23 @@ public class Solution {
     }
 
     private static boolean isDescendingOrderByLeft(int max, int index, int[] ingredients) {
-        boolean flag = false;
         for (int i = index - 1; i >= 0; i--) {
             if (ingredients[i] > max) {
-                flag = true;
-                break;
+                return true;
             }
             max = ingredients[i];
         }
-        return flag;
+        return false;
     }
 
     private static boolean isDescendingOrderByRight(int n, int max, int index, int[] ingredients) {
-        boolean flag = false;
-
         for (int i = index + 1; i < n; i++) {
             if (max < ingredients[i]) {
-                flag = true;
-                break;
+                return true;
             }
             max = ingredients[i];
         }
 
-        return flag;
+        return false;
     }
 }
