@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.Objects;
 
 public class TestFileUtil {
@@ -16,6 +17,23 @@ public class TestFileUtil {
 
     public static BufferedReader getReader(Class<?> className, String fileName) throws FileNotFoundException {
         return new BufferedReader( new FileReader( getFile( className, fileName ) ) );
+    }
+
+    public static String getString(BufferedReader reader) throws IOException {
+        StringBuilder stringBuilder = new StringBuilder();
+        String line;
+        while((line = reader.readLine()) != null) {
+            stringBuilder.append(line).append("\n");
+        }
+        return stringBuilder.toString().trim();
+    }
+
+    public static int getInt(BufferedReader reader) throws IOException {
+        return Integer.parseInt(reader.readLine());
+    }
+
+    public static double getDouble(BufferedReader reader) throws IOException {
+        return Double.parseDouble(reader.readLine());
     }
 
 }
