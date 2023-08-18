@@ -24,10 +24,8 @@ public class Solution {
     static int solution(BufferedReader br) throws IOException {
         int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] nums = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-
-        Integer cur = sortedBinary(input, nums);
-        if (cur != null) return cur;
-        return 0;
+        
+        return sortedBinary(input, nums);
     }
 
     private static Integer sortedBinary(int[] input, int[] nums) {
@@ -67,6 +65,6 @@ public class Solution {
             }
             target++;
         }
-        return null;
+        return 0;
     }
 }
