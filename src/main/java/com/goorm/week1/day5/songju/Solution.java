@@ -24,16 +24,16 @@ public class Solution {
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         int N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
-        int idx =0;
+        int idx = 0;
         PriorityQueue<BinaryNum> queue = new PriorityQueue<>();
 
         st = new StringTokenizer(br.readLine(), " ");
-        for(int i=0;i<N;i++){
+        for (int i = 0; i < N; i++) {
             int num = Integer.parseInt(st.nextToken());
             queue.offer(BinaryNum.of(num, Integer.toBinaryString(num)));
         }
 
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             BinaryNum binaryNum = queue.poll();
             idx++;
             if (idx == K) {
@@ -47,7 +47,8 @@ public class Solution {
         private int num;
         private String binary;
         private int oneCnt;
-        private BinaryNum(int num, String binary){
+
+        private BinaryNum(int num, String binary) {
             this.num = num;
             this.binary = binary;
             this.oneCnt = this.binary.length() - this.binary.replaceAll("1", "").length();
@@ -59,7 +60,7 @@ public class Solution {
 
         @Override
         public int compareTo(BinaryNum o1) {
-            if(this.oneCnt == o1.oneCnt){
+            if (this.oneCnt == o1.oneCnt) {
                 return o1.num - this.num;
             }
             return o1.oneCnt - this.oneCnt;
