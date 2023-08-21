@@ -31,28 +31,25 @@ public class Solution {
 
         List<String> arrayList = new ArrayList<>();
         for (int i = 1; i < n - 1; i++) {
-            String first = s.substring(0, i);
-            arrayList.add(first);
+            arrayList.add(s.substring(0, i));
             for (int j = i + 1; j < n; j++) {
-                String second = s.substring(i, j);
-                String third = s.substring(j);
-                arrayList.add(second);
-                arrayList.add(third);
+                arrayList.add(s.substring(i, j));
+                arrayList.add(s.substring(j));
             }
         }
 
-        List<String> sortedArray = arrayList.stream().distinct().sorted().toList();
+        List<String> sortedUniqueSubStrings = arrayList.stream().distinct().sorted().toList();
         int max = 0;
         for (int i = 1; i < n - 1; i++) {
             String first = s.substring(0, i);
             for (int j = i + 1; j < n; j++) {
                 String second = s.substring(i, j);
                 String third = s.substring(j);
-                int compare = sortedArray.indexOf(first) + sortedArray.indexOf(second) + sortedArray.indexOf(third);
-                max = Math.max(max, compare + 3);
+                int compare = sortedUniqueSubStrings.indexOf(first) + sortedUniqueSubStrings.indexOf(second) + sortedUniqueSubStrings.indexOf(third);
+                max = Math.max(max, compare);
             }
         }
 
-        return max;
+        return max + 3;
     }
 }
