@@ -15,7 +15,7 @@ class SolutionTest {
     @DisplayName("완벽한 햄버거 만들기 - 케이스1")
     void test_case_1() throws Exception {
         // given
-        BufferedReader reader = TestFileUtil.getReader(this.getClass(), "testcase/week1/day5/test_case1.txt");
+        BufferedReader reader = TestFileUtil.getReader(this.getClass(), "testcase/week1/day4/test_case1.txt");
         // when
         int solution = solution(reader);
         // then
@@ -26,7 +26,7 @@ class SolutionTest {
     @DisplayName("완벽한 햄버거 만들기 - 케이스2")
     void test_case_2() throws Exception {
         // given
-        BufferedReader reader = TestFileUtil.getReader(this.getClass(), "testcase/week1/day5/test_case2.txt");
+        BufferedReader reader = TestFileUtil.getReader(this.getClass(), "testcase/week1/day4/test_case2.txt");
         // when
         int solution = solution(reader);
         // then
