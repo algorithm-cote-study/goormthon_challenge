@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 문자열 나누기 (46' 54")
+ * 문자열 나누기 (195688)
+ * 46' 54"
  */
 public class Solution {
 
