@@ -1,4 +1,4 @@
-package com.goorm.week2.yeji;
+package com.goorm.week2.day1.yeji;
 
 import static com.goorm.week2.day1.yeji.Solution.solution;
 import static org.junit.jupiter.api.Assertions.assertEquals;
