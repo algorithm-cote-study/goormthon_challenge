@@ -3,8 +3,9 @@ package com.goorm.week2.day1.yeji;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * 문자열 나누기 (195688)
@@ -29,16 +30,16 @@ public class Solution {
 
     static int calculateScore(String s, int n) {
 
-        List<String> arrayList = new ArrayList<>();
+        Set<String> uniqueSubString = new TreeSet<>();
         for (int i = 1; i < n - 1; i++) {
-            arrayList.add(s.substring(0, i));
+            uniqueSubString.add(s.substring(0, i));
             for (int j = i + 1; j < n; j++) {
-                arrayList.add(s.substring(i, j));
-                arrayList.add(s.substring(j));
+                uniqueSubString.add(s.substring(i, j));
+                uniqueSubString.add(s.substring(j));
             }
         }
 
-        List<String> sortedUniqueSubStrings = arrayList.stream().distinct().sorted().toList();
+        List<String> sortedUniqueSubStrings = uniqueSubString.stream().toList();
         int max = 0;
         for (int i = 1; i < n - 1; i++) {
             String first = s.substring(0, i);
