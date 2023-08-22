@@ -40,6 +40,9 @@ ex) 월요일 문제 공개시 수요일까지 풀이완료
 | Week1(Day2-8/15) | 시뮬레이션 | 프로젝트 매니징 | [프로젝트 매니징(195684)](https://level.goorm.io/exam/195684/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%A4%EB%8B%88%EC%A7%95/quiz/1)                                                                                                                                   |
 | Week1(Day3-8/16) | 시뮬레이션 |   합 계산기         | [합 계산기(195685)](https://level.goorm.io/exam/195685/%ED%95%A9-%EA%B3%84%EC%82%B0%EA%B8%B0/quiz/1)                                                                                                                                            |
 | Week1(Day4-8-17) | 시뮬레이션| 완벽한 햄버거 만들기|[완벽한 햄버거 만들기(195686)](https://level.goorm.io/exam/195686/%EC%99%84%EB%B2%BD%ED%95%9C-%ED%96%84%EB%B2%84%EA%B1%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0/quiz/1)|
+| Week1(Day5-8-18)| 시뮬레이션|이진수 정렬|[이진수 정렬(195687)](https://level.goorm.io/exam/195687/%EC%9D%B4%EC%A7%84%EC%88%98-%EC%A0%95%EB%A0%AC/quiz/1)|
+| Week2(Day6-8-21)| 완전탐색|문자열 나누기|[문자열 나누기(195688)](https://level.goorm.io/exam/195688/%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%82%98%EB%88%84%EA%B8%B0/quiz/1)|
+| Week2(Day7-8-22)| 완전탐색|구름찾기 깃발|[구름찾기 깃발(195689)](https://level.goorm.io/exam/195689/%EA%B5%AC%EB%A6%84-%EC%B0%BE%EA%B8%B0-%EA%B9%83%EB%B0%9C/quiz/1)|
 
 ## <img src="https://img.icons8.com/color/48/null/folder-tree.png" width="30" height="30" style="padding: 0;margin-bottom:-5px;"/> 패키지 생성 기준
 
