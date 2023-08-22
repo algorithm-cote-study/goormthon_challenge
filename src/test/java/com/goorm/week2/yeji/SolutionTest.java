@@ -1,6 +1,6 @@
 package com.goorm.week2.yeji;
 
-import static com.goorm.week2.yeji.Solution.solution;
+import static com.goorm.week2.day1.yeji.Solution.solution;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.goorm.common.TestFileUtil;

@@ -1,4 +1,4 @@
-package com.goorm.week2.yeji;
+package com.goorm.week2.day1.yeji;
 
 import java.io.BufferedReader;
 import java.io.IOException;
