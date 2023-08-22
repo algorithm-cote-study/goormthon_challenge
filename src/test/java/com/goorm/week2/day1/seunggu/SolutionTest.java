@@ -1,7 +1,7 @@
-package com.goorm.week2.day1;
+package com.goorm.week2.day1.seunggu;
 
 import static com.goorm.common.TestFileUtil.getInt;
-import static com.goorm.week2.day1.Solution.solution;
+import static com.goorm.week2.day1.seunggu.Solution.solution;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.goorm.common.TestFileUtil;

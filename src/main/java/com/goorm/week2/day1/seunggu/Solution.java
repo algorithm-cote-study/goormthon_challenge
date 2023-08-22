@@ -1,4 +1,4 @@
-package com.goorm.week2.day1;
+package com.goorm.week2.day1.seunggu;
 
 import java.io.*;
 import java.util.*;
