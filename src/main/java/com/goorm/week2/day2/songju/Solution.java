@@ -13,8 +13,8 @@ import java.util.StringTokenizer;
 public class Solution {
     private static int N;
     private static int[][] board, flag;
-    private static int[] dx = {-1, -1, -1, 0, 0, 1, 1, 1};  //좌하 좌 좌상 하 상 우하 우 우상
-    private static int[] dy = {-1, 0, 1, -1, 1, -1, 0, 1};
+    private static final int[] dx = {-1, -1, -1, 0, 0, 1, 1, 1};  //좌하 좌 좌상 하 상 우하 우 우상
+    private static final int[] dy = {-1, 0, 1, -1, 1, -1, 0, 1};
 
     public static void main(String[] args) {
         try {
