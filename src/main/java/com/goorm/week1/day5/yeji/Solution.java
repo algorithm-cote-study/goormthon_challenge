@@ -24,11 +24,11 @@ public class Solution {
     static int solution(BufferedReader br) throws IOException {
         int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] nums = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        
+
         return sortedBinary(input, nums);
     }
 
-    private static Integer sortedBinary(int[] input, int[] nums) {
+    private static int sortedBinary(int[] input, int[] nums) {
         Queue<Integer> priorityQueue = new PriorityQueue<>((a, b) -> {
             int binaryA = 0;
             int binaryB = 0;
