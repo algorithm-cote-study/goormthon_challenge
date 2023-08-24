@@ -20,7 +20,7 @@ public class Solution {
         }
     }
 
-    public static int solution(BufferedReader br) throws IOException {
+    static int solution(BufferedReader br) throws IOException {
         int N = Integer.parseInt(br.readLine());
         int result = 0;
         for (int i = 0; i < items.length; i++) {

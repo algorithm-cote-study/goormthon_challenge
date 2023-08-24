@@ -14,8 +14,8 @@ public class Solution {
     private static char [][] board;
     private static int [][] boom;
     private static int result;
-    private static int [] dx = {-1, 0, 0, 1};
-    private static int [] dy = {0, -1, 1, 0};
+    private static final int [] dx = {-1, 0, 0, 1};
+    private static final int [] dy = {0, -1, 1, 0};
 
     public static void main(String[] args) {
         try {
@@ -26,7 +26,7 @@ public class Solution {
         }
     }
 
-    public static int solution(BufferedReader br) throws IOException {
+    static int solution(BufferedReader br) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         N = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
