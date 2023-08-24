@@ -31,18 +31,18 @@ public class Solution {
         int findNum = Integer.parseInt(st.nextToken());
 
         int[][] board = new int[n][n];
-        List<Cloud> locations = new ArrayList<>();
+        List<Cloud> clouds = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             board[i] = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             for (int j = 0; j < n; j++) {
                 if (board[i][j] == 1) {
-                    locations.add(Cloud.of(i, j));
+                    clouds.add(Cloud.of(i, j));
                     board[i][j] = -1;
                 }
             }
         }
 
-        for (Cloud cloud : locations) {
+        for (Cloud cloud : clouds) {
             for (int i = 0; i < dx.length; i++) {
                 int cx = cloud.x + dx[i];
                 int cy = cloud.y + dy[i];
