@@ -1,7 +1,6 @@
 package com.goorm.week1.day1.songju;
 
 import com.goorm.common.TestFileUtil;
-import com.goorm.week1.day1.songju.Solution;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
