@@ -36,7 +36,7 @@ public class Solution {
 
         for (int i = 0; i < bombCount; i++) {
             int[] location = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            popingBomb(location[0] - 1, location[1] - 1, map, bombMap, n);
+            poppingBomb(location[0] - 1, location[1] - 1, map, bombMap, n);
         }
 
         int max = 0;
@@ -49,26 +49,26 @@ public class Solution {
         return max;
     }
 
-    private static void popingBomb(int x, int y, String[][] map, int[][] bombMap, int n) {
-        if ("0".equals(map[x][y])) {
-            bombMap[x][y]++;
-        } else if ("@".equals(map[x][y])) {
-            bombMap[x][y] += 2;
-        }
+    private static void poppingBomb(int x, int y, String[][] map, int[][] bombMap, int n) {
+        plusBomb(x, y, map, bombMap);
 
         for (int i = 0; i < 4; i++) {
             int cx = x + dx[i];
             int cy = y + dy[i];
 
             if (cx >= 0 && cx < n && cy >= 0 && cy < n && !"#".equals(map[cx][cy])) {
-                if ("0".equals(map[cx][cy])) {
-                    bombMap[cx][cy]++;
-                } else if ("@".equals(map[cx][cy])) {
-                    bombMap[cx][cy] += 2;
-                }
+                plusBomb(cx, cy, map, bombMap);
             }
 
         }
 
+    }
+
+    private static void plusBomb(int x, int y, String[][] map, int[][] bombMap) {
+        if ("0".equals(map[x][y])) {
+            bombMap[x][y]++;
+        } else if ("@".equals(map[x][y])) {
+            bombMap[x][y] += 2;
+        }
     }
 }
