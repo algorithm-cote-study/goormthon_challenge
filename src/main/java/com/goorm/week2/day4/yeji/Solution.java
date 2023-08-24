@@ -15,6 +15,8 @@ public class Solution {
     private static final int[] dx = {1, 0, -1, 0};
     private static final int[] dy = {0, 1, 0, -1};
 
+    private static int max;
+
     public static void main(String[] args) throws Exception {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             System.out.print(solution(reader));
@@ -29,6 +31,7 @@ public class Solution {
         int bombCount = Integer.parseInt(st.nextToken());
         String[][] map = new String[n][n];
         int[][] bombMap = new int[n][n];
+        max = 0;
 
         for (int i = 0; i < n; i++) {
             map[i] = br.readLine().split(" ");
@@ -37,13 +40,6 @@ public class Solution {
         for (int i = 0; i < bombCount; i++) {
             int[] location = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             poppingBomb(location[0] - 1, location[1] - 1, map, bombMap, n);
-        }
-
-        int max = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                max = Math.max(max, bombMap[i][j]);
-            }
         }
 
         return max;
@@ -58,6 +54,7 @@ public class Solution {
 
             if (cx >= 0 && cx < n && cy >= 0 && cy < n && !"#".equals(map[cx][cy])) {
                 plusBomb(cx, cy, map, bombMap);
+                max = Math.max(max, bombMap[cx][cy]);
             }
 
         }
@@ -67,8 +64,8 @@ public class Solution {
     private static void plusBomb(int x, int y, String[][] map, int[][] bombMap) {
         if ("0".equals(map[x][y])) {
             bombMap[x][y]++;
-        } else if ("@".equals(map[x][y])) {
-            bombMap[x][y] += 2;
+            return;
         }
+        bombMap[x][y] += 2;
     }
 }
