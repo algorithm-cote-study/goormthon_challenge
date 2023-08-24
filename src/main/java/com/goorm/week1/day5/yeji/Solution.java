@@ -25,10 +25,10 @@ public class Solution {
         int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] nums = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
-        return sortedBinary(input, nums);
+        return sortedBinary(input[1], nums);
     }
 
-    private static int sortedBinary(int[] input, int[] nums) {
+    private static int sortedBinary(int compare, int[] nums) {
         Queue<Integer> priorityQueue = new PriorityQueue<>((a, b) -> {
             int binaryA = 0;
             int binaryB = 0;
@@ -60,7 +60,7 @@ public class Solution {
         int target = 1;
         while (!priorityQueue.isEmpty()) {
             int cur = priorityQueue.poll();
-            if (target == input[1]) {
+            if (target == compare) {
                 return cur;
             }
             target++;
