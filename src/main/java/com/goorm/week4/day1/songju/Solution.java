@@ -7,7 +7,7 @@ import java.util.*;
 
 /* 연합
  * Day : 23.09.04
- * Solving time : 18:34 ~ 19:15
+ * Solving time : 20:10 ~ 20:40
  */
 public class Solution {
     private static int N, M;
